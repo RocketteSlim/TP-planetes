@@ -1,0 +1,355 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+
+header{
+    background-color: #1B2430;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+footer{
+    background-color: #1B2430;
+    color: white;
+    width: 100%;
+}
+
+
+.section{
+    margin: auto;
+    max-width: 900px;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.logonav{
+    height: 50px;
+    width: 75px;
+    padding: 20px 20px;
+}
+
+.menu ul{
+    margin: auto;
+    display: flex;
+    justify-content: end;
+
+}
+.menu ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-end;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    flex-direction: row-reverse;
+    color: white;
+    width: fit-content;
+    padding: 41px 16px;
+    margin: auto;
+}
+
+a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.banner{
+    height: 400px;
+    width: 100%;
+}
+
+.planet{
+    display: flex;
+    margin-bottom: 30px;
+}
+.planet .imgplanet{
+    height: 150px;
+    width: 150px;
+}
+
+
+.planetinfo .typep{
+    display: flex;
+}
+
+.planetinfo h2{
+    font-weight: bold;
+}
+
+.Tellurique{
+    background-color: #D6D5A8;
+    border-radius: 10px;
+    color: rgb(53, 53, 53);
+    width: fit-content;
+    padding: 10px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.gazeuse{
+    background-color: #816797;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.discovery{
+    background-color: #1B2430;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.section .planet:nth-of-type(even){
+    flex-direction: row-reverse;
+    margin-left: 0;
+}
+
+.section .planet .imgplanet:nth-of-type(even){
+    margin: 50px 0px 10px 0px;
+}
+.section .planet .imgplanet:nth-of-type(odd){
+    margin: 50px 10px 0px 0px;
+}
+
+footer{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.belt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+
+.belt::before, .belt::after{
+    content: "";
+    height: 1px;     
+    background-color: black;
+    position: absolute;
+    top: 50%;     
+    z-index: -1;
+}
+.belt::before{
+    left: 0;
+    width: 30%;
+}
+.belt::after{
+    right: 0;
+    width: 30%;
+}
+
+.Footlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin:auto;
+}
+
+.FootTellurique, .FootGazeuse, .FootPartner{
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.FootTellurique li, .FootGazeuse li, .FootPartner li{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.FootPartner h2{
+    padding-left: 20px;
+}
+
+.FootGazeuse{
+    position: relative; 
+}
+
+.FootTellurique a, .FootGazeuse a, .FootPartner a{
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Footp{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+}
+
+.FootGazeuse::before, .FootGazeuse::after{
+    content: "";
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    z-index: 0;
+}
+.FootGazeuse::before{
+    left: -20px;
+}
+.FootGazeuse::after{
+    right: -20px;
+}
+
+hr{
+    width: 70%;
+}
+
+a{
+    font-family: "Montserrat";
+}
+
+/* RWD Téléphone */
+
+@media screen and (max-width: 767px) {
+    header {
+        max-width: 100%;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+    }
+
+    .section .planet .imgplanet{
+        height: 500px;
+        width: 500px;
+    }
+    .section .planet{
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .section .planet:nth-of-type(even){
+        flex-direction: column;
+    }
+    footer, .Footlinks{
+        max-width: 100%;
+    }
+
+    .Footlinks, .Footp{
+        max-width: fit-content;
+        justify-content: center;
+    }
+    .Footp{
+        max-width: 100%;
+    }
+}
+
+/* Polices*/
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
