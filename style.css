@@ -270,6 +270,10 @@ a{
     .section .planet:nth-of-type(even){
         flex-direction: column;
     }
+    .planet .imgplanet{
+        height: 100px;
+        width: 100px;
+    }
     footer, .Footlinks{
         max-width: 100%;
     }
