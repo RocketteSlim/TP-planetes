@@ -1,8 +1,17 @@
+/* 1 Header */
+/* 2 Main */
+/* 3 Footer */
+/* 4 RWD*/
+/* 5 Polices */
+
 body{
     padding: 0;
     margin: 0;
     font-family: "Roboto";
 }
+
+
+/* Header*/
 
 
 header{
@@ -19,11 +28,7 @@ header{
     margin: auto;
 }
 
-footer{
-    background-color: #1B2430;
-    color: white;
-    width: 100%;
-}
+
 
 
 .section{
@@ -69,6 +74,9 @@ a:hover{
     height: 400px;
     width: 100%;
 }
+
+
+/* Main */
 
 .planet{
     display: flex;
@@ -129,12 +137,6 @@ a:hover{
     margin: 50px 10px 0px 0px;
 }
 
-footer{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-}
-
 .belt{
     display: flex;
     justify-content: center;
@@ -159,6 +161,16 @@ footer{
 .belt::after{
     right: 0;
     width: 30%;
+}
+
+/* Footer*/
+footer{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B2430;
+    color: white;
+    width: 100%;
 }
 
 .Footlinks{
@@ -199,8 +211,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
-
 
 .Footp{
     justify-content: center;
