@@ -8,7 +8,9 @@ body{
     padding: 0;
     margin: 0;
     font-family: "Roboto";
-    max-width: 100%;
+}
+a{
+    font-family: "Montserrat";
 }
 
 
@@ -34,7 +36,7 @@ header{
 
 .section{
     margin: auto;
-    max-width: 900px;
+    max-width: 1219px;
     justify-content: center;
     padding-left: 0px;
 }
@@ -49,6 +51,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: end;
+    
 
 }
 .menu ul li{
@@ -82,39 +85,42 @@ a:hover{
 .planet{
     display: flex;
     margin-bottom: 30px;
+    max-width: 1201px;
 }
 .planet .imgplanet{
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
 }
 
-
+.planetinfo:last-of-type{
+    text-align: justify;
+}
 .planetinfo .typep{
     display: flex;
 }
 
 .planetinfo h2{
-    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 2px;
 }
 
 .Tellurique{
     background-color: #D6D5A8;
-    border-radius: 10px;
     color: rgb(53, 53, 53);
-    width: fit-content;
-    padding: 10px;
-    margin-right: 30px;
-    font-weight: bold;
 }
 
 .gazeuse{
     background-color: #816797;
-    border-radius: 10px;
     color: white;
+}
+
+.gazeuse, .Tellurique{
     width: fit-content;
     padding: 10px;
     margin-right: 30px;
     font-weight: bold;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
 }
 
 .discovery{
@@ -124,6 +130,7 @@ a:hover{
     width: fit-content;
     padding: 10px;
     font-weight: bold;
+    box-shadow: 10px 5px 5px black;
 }
 
 .section .planet:nth-of-type(even){
@@ -132,10 +139,10 @@ a:hover{
 }
 
 .section .planet .imgplanet:nth-of-type(even){
-    margin: 50px 0px 10px 0px;
+    margin: 50px 10px 0px 95px;
 }
 .section .planet .imgplanet:nth-of-type(odd){
-    margin: 50px 10px 0px 0px;
+    margin: 50px 95px 0px 10px;
 }
 
 .belt{
@@ -144,7 +151,7 @@ a:hover{
     align-items: center;
     text-align: center;
     position: relative;
-    margin: 20px;
+    margin: 20px; 
 }
 
 .belt::before, .belt::after{
@@ -157,11 +164,11 @@ a:hover{
 }
 .belt::before{
     left: 0;
-    width: 30%;
+    width: 40%;
 }
 .belt::after{
     right: 0;
-    width: 30%;
+    width: 40%;
 }
 
 /* Footer*/
@@ -177,13 +184,14 @@ footer{
 .Footlinks{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 10px;
-    margin:auto;
+    width: 1219px;
+    justify-content: space-evenly;
+    margin: auto;
 }
 
 .FootTellurique, .FootGazeuse, .FootPartner{
     justify-content: center;
+    text-align: center;
     align-items: center;
     margin: 0px 20px;
 }
@@ -195,11 +203,11 @@ footer{
     font-weight: bold;
     margin: auto;
     margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
 }
 
-.FootPartner h2{
-    padding-left: 20px;
-}
+
 
 .FootGazeuse{
     position: relative; 
@@ -219,7 +227,7 @@ footer{
     text-align: center;
     margin: auto;
     padding: 20px;
-    max-width: 400px;
+    max-width: 621px;
 }
 
 .FootGazeuse::before, .FootGazeuse::after{
@@ -232,19 +240,17 @@ footer{
     z-index: 0;
 }
 .FootGazeuse::before{
-    left: -20px;
+    left: -120px;
 }
 .FootGazeuse::after{
-    right: -20px;
+    right: -120px;
 }
 
 hr{
-    width: 70%;
+    width: 60%;
 }
 
-a{
-    font-family: "Montserrat";
-}
+
 
 /* RWD Téléphone */
 
@@ -260,18 +266,26 @@ a{
         display: flex;
         flex-direction: column;
         max-width: 700px;
+        margin: auto;
     }
     .section .planet{
         flex-direction: column;
-        padding: 0px 20px;
     }
     .section .planet:nth-of-type(even){
         flex-direction: column;
     }
-    .imgplanet{
-        height: 250px;
-        width: 250px;
+    .planet .imgplanet{
+        height: 300px;
+        width: 300px;
         margin: auto;
+    }
+    .belt::before{
+        left: 0;
+        max-width: 15%;
+    }
+    .belt::after{
+        right: 0;
+        max-width: 15%;
     }
     footer, .Footlinks{
         max-width: 100%;
