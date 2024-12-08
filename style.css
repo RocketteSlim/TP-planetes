@@ -15,11 +15,13 @@ a {
     text-decoration: none;
     color: white;
     padding-bottom: 5px;
+    transition: 0.2s;
 }
 
 a:hover {
     
     border-bottom: 0.0625rem solid white; /* 1px */
+    transition: 0.2s;
 }
 
 
@@ -50,6 +52,11 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 
 }
+#link-top{
+    margin-left: 22rem;
+    transition: 0.5s;
+}
+
 .burger-menu {
     display: none; 
     cursor: pointer;
@@ -66,7 +73,6 @@ header {
 .logonav {
     height: 55px; 
     width: 50px;
-    margin-left: 22rem;
 }
 
 .menu ul {
