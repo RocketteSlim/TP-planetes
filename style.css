@@ -294,26 +294,29 @@ hr {
 
 
 /* RWD Téléphone */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     header {
-        max-width: 100%;
+        width: 100%;
     }
     main {
         margin: auto;
     }
-    .menu ul {
+    .menu ul li {
         display: none; 
+    }
+    .headmenu {
+        width: 100%;
+        text-align: center;
     }
     .burger-menu {
         display: flex; 
-        flex-direction: column; 
-        margin: 1rem; 
+        flex-direction: column;  
     }
     .logonav {
-        margin-left: 10rem;
+        margin-left: 0rem;
     }
     .menu ul {
-        margin-right: 10rem;
+        margin-right: 0rem;
     }
     .section {
         display: flex;
@@ -392,11 +395,15 @@ hr {
 
 
 
-
 /* RWD Tablette */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     header {
         max-width: 100%;
+    }
+    .headmenu{
+        margin: auto;
+        width: 100%;
+        text-align: center;
     }
     .menu ul {
         display: none; 
