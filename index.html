@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
 
 <head>
 
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <meta name="description" content="Maquette d'une page Web sur les planètes su système solaire.">
@@ -18,7 +18,12 @@
 <body>
     <header>
         <div class="headmenu">
-            <img class="logonav" src="./src/logo.png" alt="#">
+            <img class="logonav" src="./src/logo.webp" alt="#">
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <nav class="menu">
                 <ul>
                     <li><a href="#Mercure" title="Redirection vers la section qui décris la planète Mercure"
@@ -38,12 +43,12 @@
                 </ul>
             </nav>
         </div>
-        <img class="banner" src="./src/main.png" alt="#">
+        <img class="banner" src="./src/main.webp" alt="#">
     </header>
     <main>
         <div class="section">
             <article class="planet" id="Mercure">
-                <img class="imgplanet" src="./src/mercure.svg" alt="Illustration de la planète Mercure">
+                <img class="imgplanet" src="./src/mercure.webp" alt="Illustration de la planète Mercure">
                 <div class="planetinfo">
                     <h2>Mercure</h2>
                     <div class="typep">
@@ -58,7 +63,7 @@
                 </div>
             </article>
             <article class="planet" id="Venus">
-                <img class="imgplanet" src="./src/venus.svg" alt="Illustration de la planète Vénus">
+                <img class="imgplanet" src="./src/venus.webp" alt="Illustration de la planète Vénus">
                 <div class="planetinfo">
                     <h2>Vénus</h2>
                     <div class="typep">
@@ -73,7 +78,7 @@
                 </div>
             </article>
             <article class="planet" id="Terre">
-                <img class="imgplanet" src="./src/planete-terre.png" alt="Illustration de la planète Terre">
+                <img class="imgplanet" src="./src/planete-terre.webp" alt="Illustration de la planète Terre">
                 <div class="planetinfo">
                     <h2>La Terre</h2>
                     <div class="typep">
@@ -88,7 +93,7 @@
                 </div>
             </article>
             <article class="planet" id="Mars">
-                <img class="imgplanet" src="./src/mars.png" alt="Illustration de la planète Mars">
+                <img class="imgplanet" src="./src/mars.webp" alt="Illustration de la planète Mars">
                 <div class="planetinfo">
                     <h2>Mars</h2>
                     <div class="typep">
@@ -102,9 +107,9 @@
                         placeat distinctio vitae, pariatur hic suscipit commodi debitis eveniet.</p>
                 </div>
             </article>
-            <p class="belt">CEINTURE D'ASTEROÏDES</p>
+            <p class="belt">Ceinture D'Asteroïdes</p>
             <article class="planet" id="Jupiter">
-                <img class="imgplanet" src="./src/jupiter.png" alt="Illustration de la planète Jupiter">
+                <img class="imgplanet" src="./src/jupiter.webp" alt="Illustration de la planète Jupiter">
                 <div class="planetinfo">
                     <h2>Jupiter</h2>
                     <div class="typep">
@@ -119,7 +124,7 @@
                 </div>
             </article>
             <article class="planet" id="Saturne">
-                <img class="imgplanet" src="./src/saturne.png" alt="Illustration de la planète Saturne">
+                <img class="imgplanet" src="./src/saturne.webp" alt="Illustration de la planète Saturne">
                 <div class="planetinfo">
                     <h2>Saturne</h2>
                     <div class="typep">
@@ -134,7 +139,7 @@
                 </div>
             </article>
             <article class="planet" id="Uranus">
-                <img class="imgplanet" src="./src/uranus.png" alt="Illustration de la planète Uranus">
+                <img class="imgplanet" src="./src/uranus.webp" alt="Illustration de la planète Uranus">
                 <div class="planetinfo">
                     <h2>Uranus</h2>
                     <div class="typep">
@@ -149,7 +154,7 @@
                 </div>
             </article>
             <article class="planet" id="Neptune">
-                <img class="imgplanet" src="./src/neptune.png" alt="Illustration de la planète Neptune">
+                <img class="imgplanet" src="./src/neptune.webp" alt="Illustration de la planète Neptune">
                 <div class="planetinfo">
                     <h2>Neptune</h2>
                     <div class="typep">
@@ -219,7 +224,7 @@
                     </li>
                     <li>
                         <a href="https://www.lafontaineauxlivres.fr/product/show/9782343108964/journal-du-ciel"
-                            title="Redirection vers le site internet de la fontaine au livres sur la section (Journal du Ciel)"
+                            target="_blank" title="Redirection vers le site internet de la fontaine au livres sur la section (Journal du Ciel)"
                             aria-label="Redirection vers le site internet de la fontaine au livres sur la section (Journal du Ciel)">Le
                             Journal du Ciel</a>
                     </li>
