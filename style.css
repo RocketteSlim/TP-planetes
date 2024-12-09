@@ -73,7 +73,7 @@ header {
 
 .logonav {
     height: 55px; 
-    width: 50px;
+    width: 60px;
 }
 
 .menu ul {
@@ -110,7 +110,7 @@ header {
     margin: auto;
     max-width: 1219px;
     margin-bottom: 13.125rem; /* 210px */
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .planet {
@@ -291,7 +291,7 @@ hr {
 
 
 
-
+/* RWD */
 
 /* RWD Téléphone */
 @media screen and (min-width: 320px) and (max-width: 768px) {
